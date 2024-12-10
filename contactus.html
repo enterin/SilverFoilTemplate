@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contactus.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+  <div id="nav-placeholder">
+  </div>
+  
+  <script>
+  $(function(){
+    $("#nav-placeholder").load("header.html");
+  });
+  </script>
+
+  <!-- Contact Us Section -->
+  <section class="contact-us">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>If you have any questions or need further information, feel free to get in touch with us. We're here to help!</p>
+
+      <div class="contact-content">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <form id="contactForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="contact-details">
+          <a href="https://maps.app.goo.gl/SoHGjPUkPuYAbx9j8?g_st=ic" >
+          <img  src="images/ouroffice.jpeg" alt="Office" class="contact-image" >
+        </a>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section converted-marketed">
+        <h3>Converted & Marketed by</h3>
+        <ul>
+          <li>AD Brothers And Company</li>
+          <li>
+            Shade - No.2 opp Radhanagar,<br />
+            Dhoraji-Upleta road, Dhoraji, 360 410 (Gujarat)
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-section reach-out">
+        <h3>Reach Out to Us</h3>
+        <ul>
+          <li><img src="images/whatsaap.png" alt="WhatsApp Icon" /> 70168 67322</li>
+          <li>
+            <img src="images/mail.png" alt="Email Icon" /> adbrothersinfo01@gmail.com
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
